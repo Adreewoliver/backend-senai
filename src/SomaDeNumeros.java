@@ -8,7 +8,7 @@ public class SomaDeNumeros {
         double soma = 0.0; 
         double numeroAtual; 
         
-        Scanner scanner = new Scanner(System.in);
+    try (Scanner scanner = new Scanner(System.in)) {
 
         System.out.println("======================================");
         System.out.println("       SOMADOR DE NÚMEROS INFINITO    ");
@@ -47,6 +47,6 @@ public class SomaDeNumeros {
         System.out.println("A soma total dos números digitados é: " + soma);
         System.out.println("--------------------------------------");
         
-        scanner.close();
+    }
     }
 }
